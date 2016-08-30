@@ -56,10 +56,8 @@
                 });
                 PushNotification.hasPermission(function(data) {
                     if (data.isEnabled) {
-                        console.log('isEnabled');
                         $("#push-status-ul").append('<li>push enable</li>');
                     } else {
-                        console.log('notEnabled');
                         $("#push-status-ul").append('<li>push not enable</li>');
                     }
                 });
